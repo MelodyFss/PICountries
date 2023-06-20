@@ -1,0 +1,29 @@
+/* The sidebar menu */
+.sidenav {
+    width: 70px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 50%; /* Center vertically */
+    left: 0;
+    transform: translateY(-200%); /* Center vertically */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    border-radius: 00% 100% 100% 00%;
+    margin-left: 1%;
+    background-color: rgba(133, 255, 255, 0.419);
+  }
+   
+  
+  .sidenav .image {
+    width: 60px; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+     /* Permite que la altura se ajuste automáticamente para mantener la proporción original */
+    display: block;
+    margin-bottom:45px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    /* .sidenav a {font-size: 18px;} */
+  }
+  

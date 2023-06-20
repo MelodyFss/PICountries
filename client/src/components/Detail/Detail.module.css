@@ -1,0 +1,144 @@
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    --background: linear-gradient(to left, #00d9ff84 0%, #0008ff97 100%);
+    width: 560px;
+    height: 314px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #2be9f7;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    margin-top: 10%;
+    margin-left: 20%;
+    
+    
+   }
+
+.carddetail {
+    --background: linear-gradient(to left, #00f7ff 0%, #00ff4082 100%);
+    width: 200px;
+    height: 214px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #00eeff;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    margin-top: 80%;
+    margin-left: 10%;
+    
+    
+   }
+   
+   .card::after {
+    --background: linear-gradient(to left, #00ffcc 0%, #0044ff 100%);
+    position: absolute;
+    content: "";
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(150px);
+    background: #00ff5e;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+
+   .carddetail::after {
+    --background: linear-gradient(to left, #00ff00 0%, #00ffe1 100%);
+    position: absolute;
+    content: "";
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(150px);
+    background: #00ffe5;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+   
+   .cardinfo {
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+
+   .cardinfodetail {
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+   
+   .card .title {
+    font-size:medium;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0;
+    color: #000000;
+    margin-left: 5%;
+    
+   }
+
+   .carddetail .titledetail {
+    font-size:medium;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0;
+    color: #000000;
+    margin-left: 5%;
+    
+   }
+   
+   .card:hover::after {
+    opacity: 0;
+   }
+
+   .carddetail:hover::after {
+    opacity: 0;
+   }
+   
+   .card:hover .cardinfo {
+    color: #020085;
+    transition: color 1s;
+   }
+
+   .carddetail:hover .cardinfodetail {
+    color: #020085;
+    transition: color 1s;
+   }
+   
+   .image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-left: 0%;
+  
+  }
+   
